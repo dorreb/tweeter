@@ -1,0 +1,28 @@
+textarea {
+  background-color:  #f4f1ec;
+  width: 100%;
+  resize: none;
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: thick;
+  outline: none;
+  color: #545149;
+}
+
+textarea::placeholder {
+  color: #545149;
+  opacity: 1;
+}
+
+.counter {
+  font-family: 'Bungee', sans-serif;
+  color: #545149;
+  /* border-top: 10px; */
+  float: right;
+}
+
+.new-tweet-button {
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  color: #FFFFFF;
+  }
