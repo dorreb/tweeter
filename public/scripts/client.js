@@ -6,6 +6,17 @@
 
 $(document).ready(function() {
 
+  /**
+   * Takes in a string
+   * Prevents XSS by converting the string to a text node
+   * Returns the inner HTML of the created text node
+   */
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
 
   /**
   * Takes in a new tweet object
@@ -21,7 +32,7 @@ $(document).ready(function() {
               <h4>${tweetObj.user.name}</h4>
               <p>${tweetObj.user.handle}</p>
           </header>
-          <p>${tweetObj.content.text}</p>
+          <p>${escape(tweetObj.content.text)}</p>
           <footer>
             <p>${timeSinceTweet}</p>
             <span class="interactOptions"><i class="fa-solid fa-flag"></i><i class="fas fa-retweet"></i><i class="fas fa-heart"></i></span>
@@ -100,11 +111,9 @@ $(document).ready(function() {
   });
 
 
-
   const sinceTweet = function(epochOfTweet) {
     return timeago.format(epochOfTweet, new Date());
   };
-
 
 
 
