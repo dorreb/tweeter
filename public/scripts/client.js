@@ -13,7 +13,7 @@ $(document).ready(function() {
   */
   const createTweetElement = function(tweetObj) {
     const $tweet = $("<article>").addClass("tweet");
-    const timeSinceTweet = daysSinceTweet(tweetObj["created_at"]);
+    const timeSinceTweet = sinceTweet(tweetObj["created_at"]);
 
     const innerHTML = `
           <header>
@@ -101,7 +101,7 @@ $(document).ready(function() {
 
 
 
-  const daysSinceTweet = function(epochOfTweet) {
+  const sinceTweet = function(epochOfTweet) {
     return timeago.format(epochOfTweet, new Date());
   };
 
