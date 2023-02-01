@@ -30,3 +30,13 @@ input {
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
   }
+
+  .new-tweet p {
+    margin-top: 24px;
+    padding: 15px;
+    background-color: #dd6892;
+    color: #FFFFFF;
+    display: none;
+    text-align: center;
+   
+  }
