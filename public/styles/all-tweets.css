@@ -61,12 +61,20 @@ article.tweet footer {
   display: flex;
   flex-direction: row;  
   justify-content: space-between;
+  width: 70px
  }
 
  article.tweet:hover {
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
 }
 
-span.interactOptions:hover {
+
+/* Target all icons within the interactOptions span when hovered */
+span.interactOptions i:hover {
   color: #f4c646;
+}
+
+/* Target all icons within the interactOptions span that are not being hovered */
+span.interactOptions i:not(:hover) {
+  color: #545149;
 }
