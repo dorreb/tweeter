@@ -29,6 +29,7 @@ input {
   background-color: #4056A1;
   font-family: 'Bungee', sans-serif;
   color: #FFFFFF;
+  cursor: pointer;
   }
 
   .new-tweet p {
