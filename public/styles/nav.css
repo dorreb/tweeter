@@ -21,5 +21,20 @@ nav {
 #compose-new {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav {
+  background-color: #E5E0FF;
+  background-image: url(../images/asfalt-dark.png);  
+  height: 40px;
+  }
+
+  body > header {
+    margin-top: 72px;
+        margin-bottom: 20px;
+  }
+
 }
 
