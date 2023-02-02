@@ -9,3 +9,30 @@ body > header {
   align-items: center;
 
 }
+
+  /* Laptops / Desktops: minimum width of 1024px */
+  @media only screen and (min-width: 1200px) {
+    body > header {
+      height: 400px;
+      width: 450px;
+      margin-top: 200px;
+      margin-left: 50px;
+    }
+
+    img {
+      margin-top: 30px;
+    }
+
+    h2 {
+       margin-top: 0px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+   
+    body > header {
+      margin-top: 72px;
+          margin-bottom: 20px;
+    }
+  
+  }
