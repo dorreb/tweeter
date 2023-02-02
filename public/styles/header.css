@@ -28,7 +28,7 @@ body > header {
     }
   }
 
-  @media (max-width: 1199px) {
+  @media only screen and (max-width: 1199px) {
    
     body > header {
       margin-top: 72px;
